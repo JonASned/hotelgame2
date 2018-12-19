@@ -101,6 +101,11 @@ class MyGame(arcade.Window):
         arcade.draw_texture_rectangle(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2,
                                       SCREEN_WIDTH, SCREEN_HEIGHT, self.background)
 
+        # Jonathan, Draw Your Floor Here
+        arcade.draw_rectangle_filled(500, 500, 500, 500, arcade.color.WOOD_BROWN)
+
+
+
         # Draw all the sprites.
         '''
         self.coin_list.draw()
