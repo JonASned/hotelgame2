@@ -1,3 +1,4 @@
+
 """
 Sprite Collect Coins
 
@@ -102,7 +103,11 @@ class MyGame(arcade.Window):
                                       SCREEN_WIDTH, SCREEN_HEIGHT, self.background)
 
         # Jonathan, Draw Your Floor Here
-        arcade.draw_rectangle_filled(500, 500, 500, 500, arcade.color.WOOD_BROWN)
+        rectangle_center_x = SCREEN_WIDTH / 2
+        rectangle_center_y = SCREEN_HEIGHT / 10
+        rectangle_width = SCREEN_WIDTH
+        rectangle_height = SCREEN_HEIGHT / 5
+        arcade.draw_rectangle_filled(rectangle_center_x, rectangle_center_y, rectangle_width, rectangle_height, arcade.color.WOOD_BROWN)
 
 
 
